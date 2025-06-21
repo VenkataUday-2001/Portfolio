@@ -98,31 +98,31 @@
             });
         });
         
-        // Contact form
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+        // // Contact form
+        // const contactForm = document.getElementById('contactForm');
+        // contactForm.addEventListener('submit', (e) => {
+        //     e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
+        //     // Get form data
+        //     const formData = new FormData(contactForm);
+        //     const data = Object.fromEntries(formData);
             
-            // Simulate form submission
-            const submitBtn = contactForm.querySelector('.submit-btn');
-            const originalText = submitBtn.innerHTML;
+        //     // Simulate form submission
+        //     const submitBtn = contactForm.querySelector('.submit-btn');
+        //     const originalText = submitBtn.innerHTML;
             
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitBtn.disabled = true;
+        //     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        //     submitBtn.disabled = true;
             
-            setTimeout(() => {
-                submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                    contactForm.reset();
-                }, 2000);
-            }, 1500);
-        });
+        //     setTimeout(() => {
+        //         submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+        //         setTimeout(() => {
+        //             submitBtn.innerHTML = originalText;
+        //             submitBtn.disabled = false;
+        //             contactForm.reset();
+        //         }, 2000);
+        //     }, 1500);
+        // });
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

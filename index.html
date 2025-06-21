@@ -340,7 +340,26 @@
 <div class="divider"></div>
 <p class="section-subtitle">Let's discuss opportunities and collaborations</p>
 </div>
-<form class="contact-form" id="contactForm">
+
+
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mvgrbwyg"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
+<!-- <form class="contact-form" id="contactForm">
 <div class="form-group">
 <input id="name" placeholder=" " required="" type="text"/>
 <label for="name">Your Name</label>
@@ -360,7 +379,7 @@
 <button class="submit-btn" type="submit">
 <i class="fas fa-paper-plane"></i> Send Message
                     </button>
-</form>
+</form> -->
 </section>
 </div>
 </main>
