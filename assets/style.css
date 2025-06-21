@@ -37,12 +37,59 @@
             overflow-x: hidden;
         }
 
-        body.dark-mode {
+        /* body.dark-mode {
             --text-primary: #141414;
-            --text-secondary: #151616;
+            --text-secondary: #fdfcfc;
             --bg-light: #1a202c;
             background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-        }
+        } */
+
+        body.dark-mode {
+    --text-primary: #e2e8f0; /* Light gray for better readability */
+    --text-secondary: #a0aec0;
+    --bg-light: #1a202c;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    color: var(--text-primary);
+}
+
+/* Override cards and containers for dark mode */
+body.dark-mode .summary-text,
+body.dark-mode .skill-category,
+body.dark-mode .project-card,
+body.dark-mode .timeline-content,
+body.dark-mode .contact-form {
+    background: #2d3748;
+    color: var(--text-primary);
+}
+
+body.dark-mode .skill-tag,
+body.dark-mode .tech-tag,
+body.dark-mode .timeline-date {
+    background: var(--accent-gradient);
+    color: white;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background: #1e2733;
+    color: var(--text-primary);
+    border-color: #4a5568;
+}
+
+body.dark-mode .form-group label {
+    color: #cbd5e0;
+}
+
+body.dark-mode .submit-btn {
+    background: var(--secondary-gradient);
+}
+
+body.dark-mode .section-subtitle {
+    color: var(--text-secondary);
+}
+
 
         /* Header Section */
         .header {
