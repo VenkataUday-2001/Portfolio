@@ -342,8 +342,32 @@
 </div>
 
 
+
+<form action="https://formspree.io/f/mvgrbwyg" method="POST" class="contact-form" id="contactForm">
+  <div class="form-group">
+    <input type="text" name="name" required placeholder=" " />
+    <label for="name">Your Name</label>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" required placeholder=" " />
+    <label for="email">Your Email</label>
+  </div>
+  <div class="form-group">
+    <textarea name="message" rows="5" required placeholder=" "></textarea>
+    <label for="message">Your Message</label>
+  </div>
+  <button type="submit" class="submit-btn">Send</button>
+</form>
+
+<!-- Thank you message (hidden initially) -->
+<p id="thankYouMessage" style="display: none; text-align: center; margin-top: 1rem; color: #38a169; font-weight: 500;">
+  ✅ Message sent successfully!
+</p>
+
+
+
 <!-- modify this form HTML and place wherever you want your form -->
-<form
+<!-- <form
   action="https://formspree.io/f/mvgrbwyg"
   method="POST"
 >
@@ -355,9 +379,9 @@
     Your message:
     <textarea name="message"></textarea>
   </label>
-  <!-- your other form fields go here -->
+  your other form fields go here 
   <button type="submit">Send</button>
-</form>
+</form> -->
 
 <!-- <form class="contact-form" id="contactForm">
 <div class="form-group">
